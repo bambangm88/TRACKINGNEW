@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">e-Track</string>
+    <string name="alat">Alat</string>
+    <string name="petunjuk">Petunjuk</string>
+    <string name="kronologi">Riwayat</string>
+    <string name="tentang">Tentang</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="judul">Implementasi Algoritma Djikstra Untuk Pencarian Rute Terdekat Dalam Pelacakan Kendaraan Berbasis Internet Of Things (Iot)</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="nav_header_title">e-Track</string>
+    <string name="nav_header_subtitle">Pelacak Lokasi Motor</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_petunjuk">activity_petunjuk</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_map_cek_lokasi">Map</string>
+</resources>

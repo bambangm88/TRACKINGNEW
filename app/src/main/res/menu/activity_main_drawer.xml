@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/lokasi"
+            android:title="Me" />
+        <item
+            android:id="@+id/kronologi"
+            android:icon="@drawable/timeline2"
+            android:title="Riwayat" />
+        <item
+            android:id="@+id/alat"
+            android:icon="@drawable/tool"
+            android:title="Alat" />
+        <item
+            android:id="@+id/tentang"
+            android:icon="@drawable/info"
+            android:title="Tentang" />
+
+    </group>
+
+    <item android:title="Lain-lain">
+        <menu>
+            <item
+                android:id="@+id/petunjuk"
+                android:icon="@drawable/kontak"
+                android:title="Petunjuk" />
+            <item
+                android:id="@+id/keluar"
+                android:icon="@drawable/exit"
+                android:title="Keluar" />
+        </menu>
+    </item>
+
+</menu>

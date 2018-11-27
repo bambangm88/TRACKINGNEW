@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="12dp"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_centerHorizontal="true"
+android:layout_centerVertical="true"
+android:orientation="vertical">
+
+
+
+<TextView
+    android:id="@+id/TextView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="30dp"
+    android:text="Kedai Opus"
+    android:textSize="18dip"
+    android:textStyle="bold" />
+
+
+
+<TextView
+    android:id="@+id/TextView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dip"
+    android:textStyle="bold"
+    android:text="Sudah Punya Akun? Silahkan Login"
+    android:textSize="16dip" />
+
+
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/inputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+   >
+
+
+    <EditText
+    android:id="@+id/txt_serial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:theme="@style/MyEditText"
+    android:layout_margin="10dp"
+    android:hint="Serial Sistem"
+    android:inputType="textEmailAddress"
+    android:singleLine="true" />
+
+</android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/inputLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+    app:passwordToggleEnabled="true">
+
+<EditText
+    android:id="@+id/txt_pass"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/MyEditText"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:hint="Password"
+    android:password="true"
+    android:singleLine="true" />
+
+</android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+<Button
+    android:id="@+id/btn_login"
+    android:layout_width="305dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="15dp"
+    android:text="Login"
+    android:layout_marginTop="20dp"
+    android:background="#448AFF"
+    android:textColor="#fff"
+    android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:text="Silahkan Daftar"
+        android:textSize="16dp" />
+
+<Button
+    android:id="@+id/btn_register"
+    android:layout_width="305dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/Hijau"
+    android:text="Register"
+    android:textStyle="bold" />
+
+</LinearLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="putih">#fff</color>
+    <color name="biruMuda">#AED6F1</color>
+    <color name="orangeMuda">#F39C12  </color>
+    <color name="coklat">#332900</color>
+    <color name="kuning">#ffff99</color>
+    <color name="abuBiru">#5c6bc0</color>
+    <color name="abuMuda">#EAEDED</color>
+    <color name="hijau">#58D68D</color>
+    <color name="gagal">#B00020</color>
+
+    <color name="Hijau">#66D88A  </color>
+    <color name="line2">#CD6155     </color>
+    <color name="line1"> #566573     </color>
+    <color name="toolbar"> #4caf50   </color>
+    <color name="Gagal">#b71c1c</color>
+</resources>
