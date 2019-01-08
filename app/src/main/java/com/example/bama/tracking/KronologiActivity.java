@@ -1,7 +1,6 @@
 package com.example.bama.tracking;
 
 import android.content.DialogInterface;
-import android.content.Intent;
 
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
@@ -20,8 +19,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -32,7 +29,6 @@ import com.example.bama.tracking.Adapter.Adapter_Data;
 
 import com.example.bama.tracking.app.AppController;
 import com.example.bama.tracking.Adapter.ModelData;
-import com.example.bama.tracking.Adapter.ServerAPI;
 
 import org.json.JSONArray;
 import org.json.JSONException;

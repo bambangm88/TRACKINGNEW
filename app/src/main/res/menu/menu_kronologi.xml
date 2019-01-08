@@ -7,9 +7,5 @@
         android:title="petunjuk"
         android:icon="@drawable/delete"
         app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/keluar"
-        android:orderInCategory="100"
-        android:title="Keluar"
-        app:showAsAction="never" />
+
 </menu>

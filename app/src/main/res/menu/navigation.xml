@@ -19,7 +19,7 @@
     <item
         android:id="@+id/petunjuk"
         android:icon="@drawable/help"
-        android:title="petunjuk" />
+        android:title="Petunjuk" />
 
     <item
         android:id="@+id/tentang"

@@ -127,7 +127,7 @@ public class KronologiFragment extends Fragment implements SwipeRefreshLayout.On
         pd.setMessage("Mengambil Data Lokasi Kendaraan");
         pd.setCancelable(false);
         pd.show();
-
+        mItems.clear();
         // String URL_DATA = "https://mybam.000webhostapp.com/get_data.php";
         String URL_DATA = "http://bambangm.com/get_data.php";
 
@@ -139,6 +139,7 @@ public class KronologiFragment extends Fragment implements SwipeRefreshLayout.On
                         Log.d("volley", "response : " + response.toString());
                         for (int i = 0; i < response.length(); i++) {
                             try {
+
                                 JSONObject data = response.getJSONObject(i);
                                 ModelData md = new ModelData();
                                 md.setTanggal(data.getString("tanggal"));

@@ -19,11 +19,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.bama.tracking.Login.Login;
+import com.example.bama.tracking.Service.serviceNotify;
 import com.example.bama.tracking.fragment.AlatFragment;
 import com.example.bama.tracking.fragment.KronologiFragment;
 import com.example.bama.tracking.fragment.MapFragment;
+import com.example.bama.tracking.fragment.PetunjukFragment;
 import com.example.bama.tracking.fragment.TentangFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -41,31 +44,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//
-//            }
-//        });
-//
-//        FloatingActionButton fabUser = (FloatingActionButton) findViewById(R.id.fabUser);
-//        fabUser.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                //menampilkan peta
-//                MapFragment mapFragment = new MapFragment();
-//                FragmentManager manager = getSupportFragmentManager();
-//                manager.beginTransaction().replace(R.id.mainLayout, mapFragment).commit();
-//
-//            }
-//        });
 
         //bottom navigation
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
@@ -73,6 +51,7 @@ public class MainActivity extends AppCompatActivity
         navigation.setItemIconTintList(null);
         //---
 
+        startService(new Intent(MainActivity.this, serviceNotify.class));
 
         loadFragment(new MapFragment());
 
@@ -119,7 +98,8 @@ public class MainActivity extends AppCompatActivity
                     return true;
 
                 case R.id.petunjuk:
-
+                    fragment = new PetunjukFragment();
+                    loadFragment(fragment) ;
                     return true;
 
                 case R.id.tentang:
@@ -165,6 +145,17 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.keluar) {
             showAlertLogOut() ;
+        }
+
+
+        if (id == R.id.hidup) {
+            serviceNotify.notif = "nyala" ;
+            Toast.makeText(this, "Notif Menyala",Toast.LENGTH_SHORT).show();
+        }
+
+        if (id == R.id.mati) {
+            serviceNotify.notif = "mati" ;
+            Toast.makeText(this, "Notif Mati",Toast.LENGTH_SHORT).show();
         }
 
         return super.onOptionsItemSelected(item);

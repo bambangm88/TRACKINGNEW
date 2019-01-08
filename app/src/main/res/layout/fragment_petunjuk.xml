@@ -1,14 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragment.PetunjukFragment">
+
+
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragment.PetunjukFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-</FrameLayout>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_petunjuk"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/abuBiru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Petunjuk Aplikasi"
+            android:elevation="5dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/satu"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#454545"
+        android:textStyle="bold"
+        android:text="PETUNJUK PENGGUNAAN APLIKASI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dua"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="170dp"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#454545"
+        android:text="1. Login untuk masuk ke halaman utama aplikasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_below="@+id/dua"
+        android:id="@+id/tiga"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#454545"
+        android:text="2. Menu Track menampilkan lokasi pengguna dan kendraan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/tiga"
+        android:layout_marginTop="10dp"
+        android:id="@+id/empat"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#454545"
+        android:text="3. Menu riwayat untuk menampilkan lokasi riwayat kendaraan sesuai posisi yang pernah dilalui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_below="@+id/empat"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lima"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#454545"
+        android:text="4. Menu Remote untuk menghubungkan dan memutuskan kelistrikan kendaraan serta melihat status kelistrikan kendaraan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_below="@+id/lima"
+        android:layout_marginTop="10dp"
+        android:id="@+id/enam"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#454545"
+        android:text="5. Menu Petunjuk untuk menampilkan petunjuk penggunaan aplikasi "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/enam"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tujuh"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#454545"
+        android:text="6. Menu Tentang untuk menampilkan informasi aplikasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
+</ScrollView>
